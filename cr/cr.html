@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Anh Yêu Em</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #111;
+      color: white;
+      font-family: sans-serif;
+      flex-direction: column;
+    }
+    video {
+      width: 80%;
+      max-width: 720px;
+      border: 4px solid #fff;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    }
+    .notice {
+      margin-top: 20px;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <video id="myVideo" autoplay muted loop>
+    <source src="Cr_1.mp4" type="video/mp4">
+    Trình duyệt của bạn không hỗ trợ video.
+  </video>
+
+  <div class="notice">💖💖💖💖</div>
+
+  <script>
+    const video = document.getElementById("myVideo");
+
+    // Khi người dùng tương tác (nhấp chuột), bật tiếng video
+    document.body.addEventListener("click", () => {
+      video.muted = false;
+      video.play();
+    }, { once: true }); // chỉ chạy một lần duy nhất
+  </script>
+
+</body>
+</html>

@@ -2,35 +2,37 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Nạp Tiền Tài Xỉu</title>
+  <title>Video và Âm thanh</title>
   <style>
     body {
-      text-align: center;
-      background: #f7f7f7;
-      font-family: Arial, sans-serif;
-      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #111;
     }
-    img {
-      width: 300px;
-      max-width: 80%;
-      border: 4px solid #007bff;
+    video {
+      width: 80%;
+      max-width: 720px;
+      border: 4px solid #fff;
       border-radius: 12px;
-    }
-    h1 {
-      margin-bottom: 30px;
-      color: #333;
-    }
-    p {
-      font-size: 18px;
-      margin-top: 15px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
     }
   </style>
 </head>
 <body>
 
-  <h1>💰 Quét Mã QR Để Nạp Tiền 💰</h1>
-  <img src="nap.png" alt="QR Code Nạp Tiền">
-  <p>Vui lòng ghi rõ TÊN TÀI KHOẢN trong nội dung chuyển khoản.</p>
+  <video id="myVideo" autoplay muted loop controls>
+    <source src="Cr_1.mp4" type="video/mp4">
+    Trình duyệt của bạn không hỗ trợ video.
+  </video>
+
+  <audio id="myAudio" autoplay muted loop controls>
+    <source src="Cr_1.mp3" type="audio/mpeg">
+    Trình duyệt của bạn không hỗ trợ âm thanh.
+  </audio>
 
 </body>
 </html>
